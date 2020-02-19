@@ -1,8 +1,8 @@
 {
-  "name": "parcel",
+  "name": "webgl-shader-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/main.js",
   "dependencies": {
     "dat.gui": "^0.7.6",
     "stats.js": "^0.17.0",
@@ -15,7 +15,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx parcel index.html"
   },
   "keywords": [],
   "author": "",
