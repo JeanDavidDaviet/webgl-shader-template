@@ -2,11 +2,11 @@ import * as THREE from 'three';
 import * as dat from 'dat.gui';
 import Stats from 'stats.js';
 
-import fox from './fox.jpg';
-import displacement from './displacement.png';
+import fox from '../imgs/fox.jpg';
+import displacement from '../imgs/displacement.png';
 
-import fragment from './fragment.glsl';
-import vertex from './vertex.glsl';
+import fragment from '../shaders/fragment.glsl';
+import vertex from '../shaders/vertex.glsl';
 
 let OrbitControls = require("three-orbit-controls")(THREE);
 
@@ -45,10 +45,7 @@ function init() {
 
   scene = new THREE.Scene();
 
-  var texture = new THREE.TextureLoader().load( fox );
-
   var geometry = new THREE.PlaneGeometry( 10, 10, 1, 1 );
-  material = new THREE.MeshBasicMaterial( { map: texture } );
 
   material = new THREE.ShaderMaterial({
     extensions: {
